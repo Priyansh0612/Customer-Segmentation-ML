@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Load the dataset
-file_path = "Project1.csv"
+file_path = "../data/raw/Project1.csv"
 df = pd.read_csv(file_path)
 
 # ----------------------------------------------
@@ -65,8 +65,11 @@ def preprocess_data(df, file_path):
         print(df_outliers_removed[['Previous Purchases', 'Purchase Amount (USD)', 'Total Previous Spending']].head())
 
     # 1.6 Save the Cleaned Dataset
-    directory = os.path.dirname(file_path)
-    cleaned_file_path = os.path.join(directory, "Updated_Project1.csv")
+    cleaned_file_path = "../data/processed/Updated_Project1.csv"
+    
+    # Ensure processed directory exists before saving
+    os.makedirs(os.path.dirname(cleaned_file_path), exist_ok=True)
+    
     df_outliers_removed.to_csv(cleaned_file_path, index=False)
     print(f"\nCleaned dataset saved to: {cleaned_file_path}")
 

@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Data
+# We might want to track the data, so not ignoring it, but if datasets are too large normally they are ignored.
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MacOS
+.DS_Store

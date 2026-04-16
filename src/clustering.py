@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.decomposition import PCA
 
 # Load the cleaned dataset (from Step 1)
-file_path = "Updated_Project1.csv"
+file_path = "../data/processed/Updated_Project1.csv"
 df = pd.read_csv(file_path)
 
 # ----------------------------------------------

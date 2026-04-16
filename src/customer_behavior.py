@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the cleaned dataset (assuming it comes from Step 1)
-file_path = "Updated_Project1.csv"  # Use the output from Step 1
+file_path = "../data/processed/Updated_Project1.csv"  # Use the output from Step 1
 df = pd.read_csv(file_path)
 
 # ----------------------------------------------
